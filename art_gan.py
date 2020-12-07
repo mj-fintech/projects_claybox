@@ -32,7 +32,7 @@ Loading resized data
 Use: training_data = np.load(os.path.join(‘dirname’, ‘filename.npy’))
 if the dataset directory is in somewhere else.
 """
-training_data = np.load(‘emoji_data.npy’)
+training_data = np.load('emoji_data.npy')
 
 
 """
