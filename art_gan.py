@@ -10,13 +10,13 @@ import os
 # Preview image Frame
 PREVIEW_ROWS = 1
 PREVIEW_COLS = 1
-PREVIEW_MARGIN = 5
+PREVIEW_MARGIN = 0
 SAVE_FREQ = 100
 # Size vector to generate images from
 NOISE_SIZE = 100
 # Configuration
 EPOCHS = 10000 # number of iterations
-BATCH_SIZE = 32
+BATCH_SIZE = 64
 GENERATE_RES = 3
 IMAGE_SIZE = 128 # rows/cols
 IMAGE_CHANNELS = 3
