@@ -118,7 +118,7 @@ def save_images(cnt, noise):
 image_shape = (IMAGE_SIZE, IMAGE_SIZE, IMAGE_CHANNELS)
 optimizer = Adam(1.5e-4, 0.5)
 discriminator = build_discriminator(image_shape)
-discriminator.compile(loss=”binary_crossentropy”,optimizer=optimizer, metrics=[“accuracy”])
+discriminator.compile(loss="binary_crossentropy",optimizer=optimizer, metrics=["accuracy"])
 
 generator = build_generator(NOISE_SIZE, IMAGE_CHANNELS)
 random_input = Input(shape=(NOISE_SIZE,))
@@ -127,7 +127,7 @@ generated_image = generator(random_input)
 discriminator.trainable = False
 validity = discriminator(generated_image)
 combined = Model(random_input, validity)
-combined.compile(loss=”binary_crossentropy”,optimizer=optimizer, metrics=[“accuracy”])
+combined.compile(loss="binary_crossentropy",optimizer=optimizer, metrics=["accuracy"])
 
 y_real = np.ones((BATCH_SIZE, 1))
 y_fake = np.zeros((BATCH_SIZE, 1))
