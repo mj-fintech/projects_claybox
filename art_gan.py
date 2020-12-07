@@ -8,9 +8,9 @@ from PIL import Image
 import os
 
 # Preview image Frame
-PREVIEW_ROWS = 4
-PREVIEW_COLS = 7
-PREVIEW_MARGIN = 4
+PREVIEW_ROWS = 1
+PREVIEW_COLS = 1
+PREVIEW_MARGIN = 5
 SAVE_FREQ = 100
 # Size vector to generate images from
 NOISE_SIZE = 100
